@@ -1,23 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { DataBindingComponent } from '../components/data-binding/data-binding.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, DataBindingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'first_project';
-  item = '';
-  cart: string[] = [];
-
-  add(e: any) {
-    this.item = e.target.value;
-  }
-
-  addcart() {
-    this.cart.push(this.item);
-  }
+  title = 'first';
 }

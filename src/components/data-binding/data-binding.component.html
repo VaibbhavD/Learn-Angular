@@ -1,0 +1,58 @@
+<div class="">
+  InterPolation
+  <div>One Way binding- .ts to .html</div>
+  <div>.html to .ts</div>
+  <div class="col-4">
+    {{ rollno }}
+    {{ coursename }}
+  </div>
+  <div class="col-1">
+    <input type="text " value="{{ coursename }}" />
+    <input type="{{ inputtype }}" value="{{ coursename }}" />
+  </div>
+</div>
+<br />
+
+<div class="">
+  Prperty Binding
+  <div>One Way binding- .ts to .html</div>
+  <div>.html to .ts</div>
+  <div class="col-4">
+    {{ rollno }}
+    {{ coursename }}
+  </div>
+  <div class="col-1">
+    <input type="text " [value]="coursename" />
+    <input [type]="inputtype" [value]="coursename" />
+  </div>
+</div>
+<br />
+
+<div class="">
+  Event Binding
+  <div>One Way binding- .ts to .html</div>
+  <div>.html to .ts</div>
+  <div class="col-4">
+    <button type="button" (click)="showalert('hi')" class="button bg-primary">
+      Hi
+    </button>
+    <div class="col-1">
+      <button type="button" (click)="showalert('Hello')">Hello</button>
+    </div>
+  </div>
+</div>
+<br />
+
+<div class="">
+  <div>Two Way binding</div>
+  <div>.html to .ts</div>
+  <div class="col-4">
+    <input type="text" [(ngModel)]="coursename" />
+    <div class="col-">
+      <button type="button" (click)="ChangeName()">change Course Name</button>
+    </div>
+  </div>
+  <br />
+  <h3>Signal</h3>
+  <h3>{{ firstName() }}</h3>
+</div>

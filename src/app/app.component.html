@@ -1,17 +1,1 @@
-<div class="mb-3">
-  <label for="" class="form-label">{{ item }}</label>
-  <input
-    type="text"
-    class="form-control"
-    aria-describedby="helpId"
-    placeholder=""
-    [value]="item"
-    (input)="add($event)"
-  />
-  <<button type="button" class="btn btn-primary" (click)="addcart()">
-    Button
-  </button>
-</div>
-<ul class="nav justify-content-center">
-  <li class="nav-item">{{ cart.Split("").join("|") }}</li>
-</ul>
+<app-data-binding></app-data-binding>
