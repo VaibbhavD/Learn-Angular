@@ -1,0 +1,36 @@
+<p>structural-directives works!</p>
+<div class="row m-2">
+  <div class="col-3">
+    ngFor - Array
+    <ul>
+      <li *ngFor="let c of Countries">
+        {{ c }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-3">
+    *ngFor Object Array -
+    <table class="text-center border-sm">
+      <thead>
+        <th>SrNo</th>
+        <th>Name</th>
+        <th>Roll No</th>
+        <th>Status</th>
+      </thead>
+      <tbody *ngFor="let student of Students; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.rollNo }}</td>
+        <td>{{ student.status }}</td>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-4">
+    <select [(ngModel)]="selectname" default="Vaibhav">
+      <option *ngFor="let student of Students" value="{{ student.name }}">
+        {{ student.name }}
+      </option>
+    </select>
+    <p *ngIf="selectname">{{ selectname }}</p>
+  </div>
+</div>
