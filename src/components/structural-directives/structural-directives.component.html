@@ -25,7 +25,8 @@
       </tbody>
     </table>
   </div>
-  <div class="col-4">
+  <div class="col-3">
+    *ngFor Array Object and Dropdown<br />
     <select [(ngModel)]="selectname" default="Vaibhav">
       <option *ngFor="let student of Students" value="{{ student.name }}">
         {{ student.name }}
