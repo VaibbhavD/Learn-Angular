@@ -1,0 +1,47 @@
+<h1>Control Flow Statement</h1>
+<div class="row p-5">
+  <div class="col 3">
+    <h3>if</h3>
+    @if (isvisible) {
+    <li>It Is Visible</li>
+    }
+  </div>
+  <div class="col 3">
+    <h3>else if</h3>
+    @if(isShowRed){
+    <div class="bg-danger">Red</div>
+    } @else {
+    <div class="bg-primary">Blue</div>
+    }
+  </div>
+  <div class="col 3">
+    <h3>for</h3>
+    @for (student of students; track $index) {
+    <li>{{ student.name }}-{{ student.rollNo }}</li>
+    }
+  </div>
+  <div class="col 3">
+    <h3>switch</h3>
+    <input type="number" min="7" [(ngModel)]="DayNumber" />
+    <br />
+    @switch (DayNumber) { @case (1) {
+    <span>Monday</span>
+    } @case (2) {
+    <span>Tuesday</span>
+    } @case (3) {
+    <span>Wednsday</span>
+    } @case (4) {
+    <span>Thursday</span>
+    } @case (5) {
+    <span>Friday</span>
+    } @case (6) {
+    <span>Saturday</span>
+    } @case (7) {
+    <span>Sunday</span>
+    } @case (0) {
+    <span>Please Type Number</span>
+    } @default {
+    <span>Enter a Valid Number !</span>
+    } }
+  </div>
+</div>

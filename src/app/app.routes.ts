@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { AttributesDirectivesComponent } from '../components/attributes-directives/attributes-directives.component';
 import { DataBindingComponent } from '../components/data-binding/data-binding.component';
 import { StructuralDirectivesComponent } from '../components/structural-directives/structural-directives.component';
+import { ControlFlowStatmentComponent } from '../components/control-flow-statment/control-flow-statment.component';
 
 export const routes: Routes = [
   {
@@ -15,5 +16,9 @@ export const routes: Routes = [
   {
     path: 'structual-directives',
     component: StructuralDirectivesComponent,
+  },
+  {
+    path: 'Control-flow-statment',
+    component: ControlFlowStatmentComponent,
   },
 ];
