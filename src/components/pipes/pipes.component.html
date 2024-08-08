@@ -1,0 +1,38 @@
+<h2 class="text-center pb-2">Pipes</h2>
+<p class="text-center">Pipes- Transform the data and Formating Data</p>
+<div class="row p-3">
+  <div class="col 3">
+    <h3>Uppercase Pipe Pipe</h3>
+    <p>Original value - {{ name }}</p>
+    <p>Transform value - {{ name | uppercase }}</p>
+  </div>
+  <div class="col 3">
+    <h3>Lowercase Pipe</h3>
+    <p>Original value - {{ name }}</p>
+    <p>Transform value - {{ name | lowercase }}</p>
+  </div>
+  <div class="col 3">
+    <h3>Date Pipe</h3>
+    <p>Original value - {{ date }}</p>
+    <span>date</span>
+    <p>Transform value - {{ date | date }}</p>
+    <span>dd-MMM-yy</span>
+    <p>Transform value - {{ date | date : "dd-MMM-yy" }}</p>
+    <span>dd-MMM-YYY</span>
+    <p>Transform value - {{ date | date : "dd-MM-YYY" }}</p>
+    <span>dd-MMM-yyy</span>
+    <p>Transform value - {{ date | date : "dd-MMM-yyy" }}</p>
+  </div>
+  <div class="col 3">
+    <h3>Percantage Pipe</h3>
+    <p>Original value - {{ marks }}</p>
+    <p>Transform value - {{ marks | percent }}</p>
+  </div>
+</div>
+<div class="row px-3">
+  <div class="col 4">
+    <h3>Json Pipe</h3>
+    <p>Original value - {{ studentObj }}</p>
+    <p>Transform value - {{ studentObj | json }}</p>
+  </div>
+</div>
